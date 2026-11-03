@@ -296,6 +296,23 @@ input[type='submit']:active {
         0px 2px 20px 0px rgba(0, 0, 0, 0.12),
         inset 0 0 0 1px #5b3a29;
 }
+
+#om-oss {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+#om-oss h2 {
+    grid-column: 1 / -1;
+}
+#om-oss img {
+    grid-row: 2 / span 2;
+    grid-column: 2;
+}
+#om-oss p:first-of-type,
+#om-oss h2 {
+    margin-top: 0;
+}
 .pris {
     color: #8c1010; /* Kontrast mot article background: 9.56 AAA */
     margin-top: auto;
