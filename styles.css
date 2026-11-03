@@ -297,6 +297,13 @@ input[type='submit']:active {
         inset 0 0 0 1px #5b3a29;
 }
 
+/* Motivering av valet mellan Flexbox och Grid:
+    Eftersom rubriken ska täcka båda kolumnerna,
+    texten ska ligga i den vänstra kolumen,
+    och bilden i den högra kolumnen,
+    passar det bra att använda grid eftersom det går att styra
+    placeringen i två dimensioner (horisontellt och vertikalt).
+*/
 #om-oss {
     display: grid;
     grid-template-columns: 1fr 1fr;
